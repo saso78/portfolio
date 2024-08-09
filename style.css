@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-image: url('images/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.header-content h1,
+.header-content p {
+    color: #ffffff;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about, .skills, .contact {
+    padding: 50px 0;
+    background: #f0f8ff;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .profile-pic {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.projects {
+    padding: 50px 0;
+    background: #e3f2fd; /* Light blue background for projects */
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card, .coaching-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    background-color: #bbdefb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.project-card:hover .card-front,
+.coaching-card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.project-card:hover .card-back,
+.coaching-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.coaching {
+    padding: 50px 0;
+    background: #f3e5f5; /* Light purple background for life coaching */
+}
+
+.coaching-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
