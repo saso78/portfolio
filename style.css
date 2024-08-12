@@ -66,6 +66,7 @@ body {
 }
 
 .container {
+    max-height: fit-content;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -103,12 +104,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 50px;
 }
 
 .project-card, .coaching-card {
     width: 300px;
-    height: 200px;
+    height: 400px;
     perspective: 1000px;
 }
 
@@ -135,7 +136,10 @@ body {
 .card-back {
     transform: rotateY(180deg);
 }
-
+.card-title {
+    font-size: 1em; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below title */
+}
 .project-card:hover .card-front,
 .coaching-card:hover .card-front {
     transform: rotateY(-180deg);
