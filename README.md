@@ -10,8 +10,7 @@ Contact Information
 Professional Summary
 
 I am a versatile professional with expertise in:
-
-    Psychology: Providing individual counseling, group coaching, and personal growth assistance.
+   
     System Administration: Managing servers, networks, and providing technical support.
     Software Development: Developing and maintaining software solutions, including ERP systems, and utilizing modern development tools and methodologies.
     DevOps: Implementing CI/CD pipelines, and managing deployment processes with Docker and other technologies.
